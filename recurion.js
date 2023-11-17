@@ -23,3 +23,17 @@ let customfood = () => {
 }
 
 customfood();
+function factorial(n) {
+    // Base case: factorial of 0 is 1
+    if (n === 0) {
+        return 1;
+    } else {
+        // Recursive case: n! = n * (n-1)!
+        return n * factorial(n - 1);
+    }
+}
+
+// Test the function
+console.log(factorial(5)); // Output: 120
+console.log(factorial(3)); // Output: 6
+console.log(factorial(0)); // Output: 1
